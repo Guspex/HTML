@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/fundo2.jpg);
+    background-color: rgb(74, 204, 204);
+    margin: 50px auto;
+    width: fit-content;
+}
+
+article{
+    background-color: chocolate;
+    align-items: center;
+    align-self: center;
+    margin: 50px 20px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: right;
+    align-self: center;
+    width: auto;
+    margin-right: 30px;
+}
+
+#texto {
+    margin: auto;
+    height: auto;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 7px rgb(143, 1, 1);
+    float: left;
+    width: 70%;
+
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.Exer {   
+    margin: 10px;
+    float: left;
+    color: #fff;
+}
+
+.rede {
+    color: #fff;
+    margin: 10px;
+    float: right;
+}
+
+#li {
+    list-style-type: square;
+    margin: 10px 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+
+}
+
+ol {
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+li {
+    margin: 5px;
+}
+
+a:link {
+    color:#ff0000;
+    text-decoration:none;
+  }
+  a:visited {
+    color:#999999;
+    text-decoration:none;
+  }
+  a:hover {
+    color:#307881;
+    text-decoration:underline;
+  }
+  a:active {
+    color:#00ff00;
+    text-decoration:underline;
+    background-color:#a88331;
+  }
+
+  #logo {
+    opacity: .8;
+    width: 15vh;
+  }
+
+  #logo:hover {
+    transform: scale(1.1);
+ }
+
+footer{
+    background-color: antiquewhite;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}

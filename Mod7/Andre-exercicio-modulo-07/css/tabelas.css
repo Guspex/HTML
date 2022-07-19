@@ -1,0 +1,53 @@
+
+
+table {
+
+	border: 1px solid;
+	width: auto;
+	border-collapse: collapse;
+}
+
+table tr {
+	background-color: rgb(213, 223, 230);
+}
+
+table tbody tr:nth-child(even) {
+	background-color: rgb(206, 206, 198);
+}
+
+table tbody tr:hover {
+	background-color: rgba(0, 0, 124, .2);
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.5rem;
+	text-align: right;
+	vertical-align: middle;
+}
+
+table tr td:first-child {
+	text-align: left;
+	font-weight: bold;
+}
+
+table th {
+	text-align: left;
+	background-color: aliceblue;
+
+}
+
+.table-container {
+	padding: 2rem 1rem;
+}
+
+.table-container h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #00f;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+	background-color: rgb(172, 177, 241);
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-End - HTML + CSS</h2>
+		</header>
+
+		<section>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="#TOP">Home</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#contato">Contato</a></li>
+						<li><a href="homepage.html">Voltar para homepage</a></li>
+					</ul>
+				</nav>
+
+				
+				<article>
+					
+					<h1>Contato</h1>
+					<p>Preencha os campos abaixo</p>
+					
+					<form method="post">
+						
+						<div>
+							<label for="nome">Nome:</label>
+							<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+						</div>
+						
+						<div><br>
+							<label for="email">E-mail:</label>
+							<input type="email" name="email" id="email" placeholder="Digite seu email">
+						</div>
+						
+						<div><br>
+							<label for="mensagem">Mensagem:</label>
+							<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+						</div>
+						
+						<div>
+							<p>
+								<label>Qual linguagem você prefere?</label>
+								<input type="radio" name="linguagens" value="html"> HTML
+								<input type="radio" name="linguagens" value="css"> CSS
+								<input type="radio" name="linguagens" value="javascript"> JavaScript
+							</p>
+						</div>
+						
+						<div>
+							<p>
+								<label>Quais linguagens você sabe?</label>
+								<input type="checkbox" name="linguagens" value="html"> HTML
+								<input type="checkbox" name="linguagens" value="css"> CSS
+								<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+							</p>
+						</div>
+						
+						<div>
+							<label>Qual a sua cor favorita?</label>
+							<select>
+								<option value="Azul">Azul</option>
+								<option value="Verde">Verde</option>
+								<option value="Vermelho" selected>Vermelho</option>
+							</select>
+						</div>
+						
+						<div>
+							<input type="submit" value="Submeter" id="botao">
+						</div>
+						
+						
+					</form>
+					
+					
+					
+				</article>
+				<!--
+				<div id="teste">
+					<h3>Teste</h3>
+				</div>
+				-->
+			</div>
+		</section>
+		
+		<footer>
+			<p>Desenvolvido por Marcelo</p>
+			<p>Editado por André</p>
+		</footer>
+		
+	</body>
+	</html>
