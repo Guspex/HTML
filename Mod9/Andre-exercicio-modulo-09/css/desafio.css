@@ -1,0 +1,202 @@
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-image: url(../images/fundo2.jpg);
+    background-color: rgb(74, 204, 204);
+    margin: 50px auto;
+    width: fit-content;
+}
+
+article{
+    background-color: chocolate;
+    margin: 50px 20px;
+    display: inline-flex;
+    vertical-align: center;
+}
+
+article img {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: right;
+    align-self: center;
+    width: auto;
+    margin-right: 30px;
+}
+
+#texto {
+    margin: auto;
+    height: auto;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 7px rgb(143, 1, 1);
+    float: left;
+    width: 70%;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.Exer {
+    font-size: 1.6rem;   
+    margin: 10px;
+    float: left;
+    color: #fff;
+}
+
+.rede {
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 10px;
+    float: right;
+}
+
+#li {
+    list-style-type: square;
+    margin: 10px 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+
+}
+
+ol {
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+li {
+    margin: 5px;
+}
+
+a:link {
+    color:#ff0000;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#999999;
+    text-decoration:none;
+ }
+
+a:hover {
+    color:#307881;
+    text-decoration:underline;
+}
+
+a:active {
+    color:#00ff00;
+    text-decoration:underline;
+    background-color:#a88331;
+}
+
+#logo {
+    opacity: .8;
+    width: 15vh;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: antiquewhite;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.flip-card{
+    background-color:transparent;
+    width:300px;
+    height:300px;
+    perspective:1000px;
+}
+
+.flip-card-inner {
+    width:100%;
+    height:100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+ 
+.flip-card:hover .flip-card-inner {
+     transform:rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    float: right;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+}
+
+.flip-card-front img, .flip-card-back img {
+    position: absolute;
+    width:200px;
+    margin-top: 52.109px;
+}
+
+.flip-card-back {
+    position:absolute;
+    transform:rotatey(180deg);
+}
+
+.shadowBtn{
+    width:120px;
+    height:60px;
+    background-color:transparent;
+    color:white;
+    cursor:pointer;
+    position:relative;
+}
+
+.shadowBtn:hover{
+    background-color:transparent;
+    color:rgb(38, 15, 241);
+    transition: 1s ease;
+}
+
+.shadowBtn::before {
+    content:"";
+    position:absolute;
+    left:0;
+    top:50px;
+    background:transparent;
+    height:50%;
+    width:100%;
+    transform: perspective(len) rotateX(40deg)scale(1,8.35);
+    filter:blur(6px);
+    transition:Is ease;
+}
+
+.shadowBtn:hover::before {
+    background:rgb(165, 94, 94);
+    top:10px;
+}
+
+@media (max-width: 1019px) {
+    section, article {
+        width: 100%;
+        height: auto;
+    }
+}
+  
+@media (max-width: 720px) {
+    section, article {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .flip-card-back {
+        position: absolute;
+        transform:rotatey(180deg);
+    }
+}

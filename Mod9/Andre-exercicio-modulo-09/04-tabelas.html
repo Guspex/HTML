@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML - Tabelas</title>
+		<style>
+			body > img {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: auto;
+				height: auto;
+				opacity: 0.2;
+			}
+			footer {
+				background-color: #777;
+				padding: 10px;
+				text-align: center;
+				color: rgb(0, 0, 0);   
+				bottom: 0;
+				position: fixed; 
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="./images/ebac-logo.png" alt="Imagem Logo EBAC">
+		<h1>Tabela</h1>
+		<h3>Sem arquivo CSS, estilo definido diretamente no código.</h3>
+
+		<table border="1" width="100%">
+			<thead>
+				<tr>
+					<th>Coluna 1</th>
+					<th>Coluna 2</th>
+					<th>Coluna 3</th>
+				</tr>
+			</thead>
+			<tbody>	
+				<tr align="center">
+					<td>1A</td>
+					<td>1B</td>
+					<td>1C</td>
+				</tr>
+				<tr align="right">
+					<td>2A</td>
+					<td>2B</td>
+					<td>2C</td>
+				</tr>
+				<tr>
+					<td>3A</td>
+					<td colspan="2">3BC</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Rodapé da tabela</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+		<h2>Tabela como layout</h2>
+
+		<table width="600">
+			<tr height="90">
+				<td colspan="4" bgcolor="#BBCCEE" align="center"> Cabeçalho</td>
+			</tr>
+			<tr height="300">
+				<td width="20" bgcolor="#0000FF"></td>
+				<td width="60%" bgcolor="#DDDDDD">
+					<h2>Título</h2>
+					<p>fdajfkdj jfdjfodsapodhgdo odihofdfhsdooi</p>
+
+				</td>
+				<td bgcolor="#EEEEEE">Coluna 2</td>
+				<td width="20"bgcolor="#0000FF"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+			</tr>
+		</table>
+		<li><a href="modulo-07-exercicio.html">Voltar para homepage</a></li>
+		<footer>
+			<p>Desenvolvido por Marcelo</p>
+			<p>Editado por André</p>
+		</footer>
+	</body>
+</html>
