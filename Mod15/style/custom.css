@@ -1,16 +1,16 @@
 
 section {
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 4.1rem;
+    padding-top: 4.1rem;
 }
 
 input,
 textarea {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .card {
-    width: 32%;
+    width: 35%;
     float: left;
-    margin: 5px;
+    margin: 6px;
 }
