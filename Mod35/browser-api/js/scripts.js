@@ -1,5 +1,4 @@
-
-function dragStart(event){
+function dragStart(event) {
 
     console.log(event.dataTransfer);
 
@@ -9,11 +8,11 @@ function dragStart(event){
 
 }
 
-function dragOver(event){
+function dragOver(event) {
     event.preventDefault();
 }
 
-function drop(event){
+function drop(event) {
     const id = event.dataTransfer.getData('text');
     console.log(id);
     const draggableElement = document.getElementById(id);
@@ -25,10 +24,13 @@ function drop(event){
 
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    let drag = document.querySelector('.draggable');
-    drag.addEventListener('dragstart', dragStart);
-})
+// window.addEventListener('DOMContentLoaded', () => {
+
+//     let drag = document.querySelector('.draggable');
+
+//     drag.addEventListener('dragstart', dragStart);
+
+// })
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
@@ -36,15 +38,14 @@ const ctx = canvas.getContext('2d');
 ctx.fillStyle = 'blue';
 ctx.fillRect(10, 10, 150, 150);
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function () {
 
-    if( this.window.innerWidth < 620)
+    if (this.window.innerWidth < 620)
         console.log('smartphone');
-    else if ( this.window.innerWidth < 920 )
+    else if (this.window.innerWidth < 920)
         console.log('tablet');
     else {
         console.log('desktop');
     }
 
 })
-  
