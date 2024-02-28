@@ -1,4 +1,3 @@
-
 if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showLocation);
     console.log(navigator.geolocation)
